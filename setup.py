@@ -15,7 +15,7 @@ executables = [cx_Freeze.Executable("snake game.py", base=base)]
 cx_Freeze.setup(
     name = "Funny Snake game",
     options = {"build_exe": {"packages":["tkinter","os"], "include_files":["snake-image.ico",'tcl86t.dll','tk86t.dll', 'src']}},
-    # Copy the 'tcl86t.dll' and 'tk86t.dll' from python folder
+    # Copy the 'tcl86t.dll' and 'tk86t.dll' from python folder These will available in Python/DLLs
     # Include the name of your own files in "include_files":[]
     version = "1.0",
     description = "Pygame Play and enjoy",
